@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7AngryMusicPlayer", "7AngryMusicPlayer\7AngryMusicPlayer.csproj", "{BACEB3C0-431B-4549-9230-0ADBB2AC838D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaFilesAPI", "..\..\..\Desktop\MyMediaFilesAPI\MediaFilesAPI.csproj", "{88022B33-99C9-41C0-A1A7-8567428046AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BACEB3C0-431B-4549-9230-0ADBB2AC838D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACEB3C0-431B-4549-9230-0ADBB2AC838D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACEB3C0-431B-4549-9230-0ADBB2AC838D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACEB3C0-431B-4549-9230-0ADBB2AC838D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88022B33-99C9-41C0-A1A7-8567428046AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88022B33-99C9-41C0-A1A7-8567428046AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88022B33-99C9-41C0-A1A7-8567428046AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88022B33-99C9-41C0-A1A7-8567428046AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E33976AD-24C6-4DC6-979A-B3C73106DFD6}
+	EndGlobalSection
+EndGlobal

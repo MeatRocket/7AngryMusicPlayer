@@ -1,0 +1,52 @@
+﻿@namespace AngryMonkey.Cloud.Components
+@using MediaFilesAPI;
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using _7AngryMusicPlayer.Component
+@implements IAsyncDisposable
+@inject IJSRuntime JS
+@inject MediaFiles MediaFiles
+
+@*<h3>MusicPlayer</h3>
+<div class="amc-musicplayer" @ref="ComponentElement">
+    <div>
+        <ul>
+            @foreach (string directory in MusicDirectories)
+            {
+                <li>@directory</li>
+            }
+        </ul>
+        <input type="text" @bind-value="@FilledMusicDirectory" />
+        <button @onclick="AddMusicDirectory">Add Directory</button>
+    </div>
+</div>*@
+
+<button @onclick="OpenDirectory">Open Directory</button>
+@if (files is not null)
+{
+    <span>@files.Count() files</span>
+}
+
+<section class="grid-area">
+    @if (files is not null)
+    {
+        <QuickGrid Items="@files" Class="files-grid" Virtualize="true" ItemSize="64">
+            <PropertyColumn Property="@(f => f.Name)" Sortable="true" />
+            <PropertyColumn Title="Modified" Property="@(f => f.LastModified)" Sortable="true" />
+            <TemplateColumn Title=""><AudioPlayer File="@context" OnMusicChanging="MusicHasChanged"></AudioPlayer></TemplateColumn>
+        </QuickGrid>
+    }
+</section>
+
+@*<a href="@TestFilePath" target="_blank">@TestFilePath</a>
+<div class="ListContainer">
+@foreach (string filePath in Music)
+{
+    <div @onclick="(() => {OnMusicClicked(filePath);})">@Path.GetFileName(filePath)</div>
+}
+</div>
+
+
+<div class="amc-musicplayer-music">
+    <audio controls src="@CurrentSongFilePath"></audio>
+</div>
+*@

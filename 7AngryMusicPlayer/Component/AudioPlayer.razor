@@ -1,0 +1,13 @@
+﻿@using MediaFilesAPI
+@using System.Runtime.InteropServices
+@using System.Text
+@using System.Diagnostics
+@inject MediaFiles MediaFiles
+@implements IDisposable
+
+<div class="file-actions">
+    <button @onclick="TogglePlayingAudioAsync" is-playing="@(playingSource is not null)">
+        @message
+    </button>
+</div>
+
